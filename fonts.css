@@ -12,25 +12,25 @@
 }
 @font-face {
     font-family: PFDinTextPro;
-    src: url(/fonts/pfdintextpro-regular-webfont.woff2) format("woff2"), url(/fonts/pfdintextpro-regular-webfont.woff) format("woff");
+    src: url(fonts/pfdintextpro-regular-webfont.woff2) format("woff2"), url(fonts/pfdintextpro-regular-webfont.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 @font-face {
     font-family: PFDinTextPro;
-    src: url(/fonts/pfdintextpro-medium-webfont.woff2) format("woff2"), url(/fonts/pfdintextpro-medium-webfont.woff) format("woff");
+    src: url(fonts/pfdintextpro-medium-webfont.woff2) format("woff2"), url(fonts/pfdintextpro-medium-webfont.woff) format("woff");
     font-weight: 600;
     font-style: normal
 }
 @font-face {
     font-family: DIN-Light;
-    src: url(/fonts/din-light-webfont.woff2) format("woff2"), url(/fonts/din-light-webfont.woff) format("woff");
+    src: url(fonts/din-light-webfont.woff2) format("woff2"), url(fonts/din-light-webfont.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 @font-face {
     font-family: "droidserif";
-    src: url(/fonts/droidserif-webfont.woff2) format("woff2"), url(/fonts/droidserif-webfont.woff) format("woff");
+    src: url(fonts/droidserif-webfont.woff2) format("woff2"), url(fonts/droidserif-webfont.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
