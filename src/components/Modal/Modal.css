@@ -5,8 +5,6 @@
     bottom: 0;
     top: 169px;
     left: 80px;
-    width: auto;
-
 }
 /* Styles applied to the root element if the `Modal` has exited. */
 .hidden {

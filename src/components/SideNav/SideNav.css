@@ -36,7 +36,7 @@
 
 .SideNav-Welcome {
     display: flex;
-    padding: 24px 8px;
+    padding: 24px 16px;
     min-height: 56px;
     align-items: flex-start;
     justify-content: flex-start;
@@ -44,6 +44,11 @@
     background: #f4f4f6;
     color: rgba(0,0,0,1);
     font-size: 18px;
-    letter-spacing: 0.2;
+    letter-spacing: 0.2px;
     border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.SideNav-Welcome > div {
+    border-left: 3px solid #ED2228;
+    padding-left: 8px;
 }

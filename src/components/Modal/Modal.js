@@ -232,6 +232,8 @@ class Modal extends React.Component {
         const hasTransition = getHasTransition(this.props);
         const childProps = {};
 
+        console.log(hasTransition)
+
         if (!keepMounted && !open && (!hasTransition || exited)) {
             return null;
         }
@@ -240,6 +242,7 @@ class Modal extends React.Component {
         if (hasTransition) {
             childProps.onExited = createChainedFunction(this.handleExited, children.props.onExited);
         }
+
 
         if (children.props.role === undefined) {
             childProps.role = children.props.role || 'document';
@@ -263,9 +266,7 @@ class Modal extends React.Component {
                     ref={ref => {
                         this.modalRef = ref;
                     }}
-                    className={classNames('Modal', className, {
-                        ['hidden']: exited,
-                    })}
+                    className={classNames('Modal', className, )}
                     {...other}
                 >
                     {hideBackdrop ? null : (

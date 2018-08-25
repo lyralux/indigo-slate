@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './AppBar.css'
 
 function AppBar(props) {
-    const { children, classes, className: classNameProp, color, position, ...other } = props;
+    const { children } = props;
 
     const className = 'AppBar';
 
@@ -27,9 +27,6 @@ function AppBar(props) {
 AppBar.propTypes = {
 
     children: PropTypes.node.isRequired,
-
-
-    className: PropTypes.string,
 
 };
 

@@ -102,6 +102,8 @@ class SubNav extends React.Component {
                 direction={oppositeDirection[anchor]}
                 timeout={transitionDuration}
                 appear={this.mounted}
+                exit={true}
+                enter={true}
                 {...SlideProps}
             >
                 {drawer}

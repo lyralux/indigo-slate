@@ -143,6 +143,7 @@ class MenuItem extends React.Component {
             )
         }
 
+        //HAS CHILDREN
         if (data.children) {
             Component = !componentProps.component && !componentProp ? 'div' : Component;
 
@@ -155,8 +156,9 @@ class MenuItem extends React.Component {
                 }
             }
 
+            //LEVEL 2 MENU WITH COLLAPSE
             if(level === 2) {
-                let menuOpen = activeSubMenu === data.title
+                let menuOpen = activeSubMenu === data.title;
                 return (
                     <ContainerComponent
                         className={classNames(classes.container, ContainerClassName)}
@@ -168,11 +170,11 @@ class MenuItem extends React.Component {
                         </Component>
                         <Collapse in={menuOpen} className={classes.collapseMenu} timeout="auto" unmountOnExit>
                             <Menu component="div" disablePadding>
-                                {data.children.map((item, index) => {
+                                {data.children.map((item, idx) => {
                                     return (
-                                    <Component className={classNames(classes.root, classes.button)} button>
-                                        <ListItemText classes={{ primary: classes.primary }} inset primary={item.title} />
-                                    </Component>
+                                        <Component className={classNames(classes.root, classes.button)} button key={`${item.title}-${idx}`}>
+                                            <ListItemText classes={{ primary: classes.primary }} inset primary={item.title} />
+                                        </Component>
                                     )
                                 })}
 

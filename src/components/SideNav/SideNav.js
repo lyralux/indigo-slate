@@ -31,6 +31,7 @@ class SideNav extends React.Component {
         this.setState({ subOpen: true, subData: data });
     };
 
+
     handleDrawerClose = () => {
         this.setState({ subOpen: false, subData: null });
     };
@@ -60,9 +61,9 @@ class SideNav extends React.Component {
             }}>
                 <div className='SideNav-Toolbar'/>
                 <div className='SideNav-Welcome'>
-                    <span>Hello {user}</span>
+                    <div>Hello {user}</div>
                 </div>
-                <SubNav open={subOpen} onClose={this.handleDrawerClose} data={subData} ModalProps={{container: this.subNavContainer}}/>
+                <SubNav open={subOpen} exit="true" onClose={this.handleDrawerClose} data={subData} ModalProps={{container: this.subNavContainer, ...ModalProps}}/>
                 <Menu level={1} component="nav">
                     { data.map((item, index) => {
                             return <MenuItem button level={1} onClick={this.handleDrawerOpen} data={item} key={index}/>
@@ -79,6 +80,8 @@ class SideNav extends React.Component {
                 direction={oppositeDirection[anchor]}
                 timeout={transitionDuration}
                 appear={this.mounted}
+                exit={true}
+                enter={true}
                 {...SlideProps}
             >
                 {drawer}
