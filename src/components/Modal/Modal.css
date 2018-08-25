@@ -1,0 +1,20 @@
+.Modal {
+    position: fixed;
+    z-index: 1300;
+    right: 0;
+    bottom: 0;
+    top: 169px;
+    left: 80px;
+    width: auto;
+
+}
+/* Styles applied to the root element if the `Modal` has exited. */
+.hidden {
+    visibility: hidden
+}
+
+@media (max-width: 767.98px) {
+    .Modal {
+        left: 72px;
+    }
+}

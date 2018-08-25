@@ -1,0 +1,85 @@
+.SubNav {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 0 auto;
+    z-index: 1200;
+    -webkit-overflow-scrolling: touch;
+    top: 0;
+    outline: none;
+    left: auto;
+    right: 0;
+    position: relative;
+    width: 100%;
+    background-color: #f4f4f6 ;
+    border-left: 1px solid rgba(0,0,0,0.12);
+    /*background-color: #20272C;*/
+}
+
+
+.SubNav-Header {
+    font-size: 24px;
+}
+.SubNav-Wrapper {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.SubNav-Toolbar {
+    min-height: 64px;
+}
+
+.SubNav-Welcome {
+    display: flex;
+    padding: 24px 8px;
+    min-height: 56px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: linear-gradient(-70deg, #4F6DAD, #25263D);
+    color: #F8F8F8;
+    border-bottom: 1px solid #4F6DAD;
+}
+
+
+.closeMenu {
+    position: fixed;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    /*top: -40px;*/
+    height: 40px;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    /*right: 4%;*/
+}
+
+.closeMenu .icon {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    padding-left: 10px;
+}
+
+.closeMenu .icon:before {
+    background-image: url(../../close-thin.svg);
+    content: " ";
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.closeMenu .text {
+    font-size: 14px;
+    line-height: 14px;
+}

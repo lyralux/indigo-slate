@@ -1,0 +1,16 @@
+.Backdrop {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.02);
+    width: auto;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: none;
+}
+
+.Backdrop-invisible {
+    background-color: transparent;
+}

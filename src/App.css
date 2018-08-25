@@ -1,0 +1,45 @@
+body, input, textarea, select, button {
+  font-family: PFDinTextPro,Meiryo,MS PGothic,Malgun Gothic,Dotum,Arial,Helvetica,Sans-serif;
+  overflow: hidden;
+}
+.App {
+  flex-grow: 1;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.App-Content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding:  24px;
+  min-width: 0;
+  transition: margin 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms, visibility 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+
+.App-Content-Open {
+  margin-left: initial;
+}
+
+@media (max-width: 767.98px) {
+  .App-Content-Open {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.App-Toolbar, .SideNav-Toolbar {
+  min-height: 64px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+
+

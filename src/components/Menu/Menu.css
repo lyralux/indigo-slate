@@ -1,0 +1,108 @@
+.Menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.Menu-Container {
+    position: relative;
+}
+
+.focusVisible {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.Menu-Divider {
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+}
+
+.Menu-Button {
+    -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -moz-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -ms-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -o-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.Menu-Button:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.Secondary-Action {
+    padding-right: 32px;
+}
+
+.buttonLevel1 {
+    display: block;
+    right: .5%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 32px;
+    /*background-color: hsla(0,0%,100%,.69);*/
+    padding: 9px 18px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonLevel1:after {
+    height: 32px;
+    width: 12px;
+    display: inline-block;
+    content: " ";
+    background-size: contain;
+    background: url(../../angle-th-right.svg) no-repeat 50%;
+}
+
+.buttonLevel2 {
+    display: block;
+    right: .5%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 32px;
+    /*background-color: hsla(0,0%,100%,.69);*/
+    padding: 9px 18px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonLevel2:after {
+    height: 32px;
+    width: 12px;
+    display: inline-block;
+    content: " ";
+    background-size: contain;
+    background: url(../../angle-th-right.svg) no-repeat 50%;
+    transform: rotate(90deg);
+    -webkit-transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -moz-transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -ms-transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    -o-transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.buttonLevel2.open:after {
+    transform: rotate(0);
+}

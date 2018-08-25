@@ -1,0 +1,172 @@
+[
+  {
+    "title": "New Arrivals",
+    "children": [
+      {
+        "title": "Woman"
+      },
+      {
+        "title": "Man"
+      }
+    ]
+  },
+  {
+    "title": "Woman",
+    "children": [
+      {
+        "title": "Categories",
+        "children": [
+          {
+            "title": "Apparel"
+          },
+          {
+            "title": "Bags"
+          },
+          {
+            "title": "Shoes"
+          },
+          {
+            "title": "Accessories"
+          }
+        ]
+      },
+      {
+        "title": "Must Haves",
+        "children": [
+          {
+            "title": "Featured Bags"
+          },
+          {
+            "title": "Featured Shoes"
+          },
+          {
+            "title": "Ready-To-Wear"
+          }
+        ]
+      },
+      {
+        "title": "Collections",
+        "children": [
+          {
+            "title": "HAUTE COUTURE"
+          },
+          {
+            "title": "Fall/Winter"
+          },
+          {
+            "title": "PRET-A-PORTER"
+          }
+        ]
+      },
+      {
+        "title": "Bespoke Services",
+        "children": [
+          {
+            "title": "Guitar Straps"
+          },
+          {
+            "title": "ID Camouflage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Man",
+    "children": [
+      {
+        "title": "Categories",
+        "children": [
+          {
+            "title": "Apparel"
+          },
+          {
+            "title": "Bags"
+          },
+          {
+            "title": "Shoes"
+          },
+          {
+            "title": "Accessories"
+          }
+        ]
+      },
+      {
+        "title": "Must Haves",
+        "children": [
+          {
+            "title": "Featured Shoes"
+          },
+          {
+            "title": "Ready-To-Wear"
+          },
+          {
+            "title": "Product Stories"
+          },
+          {
+            "title": "Valentino Animals"
+          }
+        ]
+      },
+      {
+        "title": "Collections",
+        "children": [
+          {
+            "title": "PRET-A-PORTER"
+          },
+          {
+            "title": "Spring/Summer"
+          }
+        ]
+      },
+      {
+        "title": "Bespoke Services",
+        "children": [
+          {
+            "title": "Made to measure Formal"
+          },
+          {
+            "title": "Made to Measure Denim"
+          },
+          {
+            "title": "Personalization"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "World of Valentino",
+    "children": [
+      {
+        "title": "Valentino"
+      },
+      {
+        "title": "In Boutique Services"
+      },
+      {
+        "title": "News"
+      },
+      {
+        "title": "AD Campaign"
+      }
+    ]
+  },
+  {
+    "title": "Gifts",
+    "children": [
+      {
+        "title": "Gift For Her"
+      },
+      {
+        "title": "Gift For Him"
+      }
+    ]
+  },
+  {
+    "title": "Locations"
+  },
+  {
+    "title": "Contact Us"
+  }
+]

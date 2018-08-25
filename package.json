@@ -1,0 +1,24 @@
+{
+  "name": "indigo-slate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.5.1",
+    "classnames": "^2.2.6",
+    "debounce": "^1.2.0",
+    "dom-helpers": "^3.3.1",
+    "keycode": "^2.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-event-listener": "^0.6.3",
+    "react-scripts": "1.1.5",
+    "react-transition-group": "^2.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

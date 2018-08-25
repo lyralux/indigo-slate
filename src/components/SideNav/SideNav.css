@@ -1,0 +1,49 @@
+.SideNav {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 0 0 auto;
+    z-index: 1200;
+    -webkit-overflow-scrolling: touch;
+    top: 0;
+    outline: none;
+    left: 0;
+    right: 0;
+    position: relative;
+    width: 450px;
+    background-color: #FFF;
+    border-right: 1px solid rgba(0,0,0,0.12)
+}
+
+@media (max-width: 767.98px) {
+    .SideNav {
+        width: 100%;
+    }
+    .SideNav-Wrapper {
+        width: 100%;
+    }
+}
+
+.SideNav-Wrapper {
+   flex: 0 0 auto;
+    /*height: calc(100vh - 64px);*/
+}
+
+.SideNav-Toolbar {
+    min-height: 64px;
+}
+
+.SideNav-Welcome {
+    display: flex;
+    padding: 24px 8px;
+    min-height: 56px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /*background: linear-gradient(30deg, #CAB286 , #f4f4f6);*/
+    background: #f4f4f6;
+    color: rgba(0,0,0,1);
+    font-size: 18px;
+    letter-spacing: 0.2;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
