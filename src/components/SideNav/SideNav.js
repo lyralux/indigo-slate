@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import SubNav from '../SubNav/SubNav'
 import Menu from "../Menu/Menu"
 import MenuItem from "../Menu/MenuItem"
-import { duration } from '../../lib/transitions';
+import { duration, easing } from '../../lib/transitions';
 import Slide from '../Slide/Slide';
+import WordAnimation from '../WordAnimation/WordAnimation';
 import './SideNav.css'
 
 const oppositeDirection = {
@@ -61,7 +62,17 @@ class SideNav extends React.Component {
             }}>
                 <div className='SideNav-Toolbar'/>
                 <div className='SideNav-Welcome'>
-                    <div>Hello {user}</div>
+                    <div>
+                        <WordAnimation
+                            delay={375}
+                            duration={375}
+                            easing={easing.sharp}
+                            transform={'translateY(30px)'}
+                            start={open}
+                        >
+                            {`Hello ${user}!`}
+                        </WordAnimation>
+                    </div>
                 </div>
                 <SubNav open={subOpen} exit="true" onClose={this.handleDrawerClose} data={subData} ModalProps={{container: this.subNavContainer, ...ModalProps}}/>
                 <Menu level={1} component="nav">

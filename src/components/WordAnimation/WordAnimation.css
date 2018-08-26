@@ -1,0 +1,4 @@
+.word-animation .word {
+    display: inline-block;
+    white-space: pre-wrap;
+}
